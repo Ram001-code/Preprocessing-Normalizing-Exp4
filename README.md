@@ -14,7 +14,7 @@ The dataset is loaded into a pandas DataFrame using:
 import pandas as pd
 
 # Load the dataset
-df = pd.read_csv('path/to/your/dataset.csv')
+df = pd.read_csv('./content/food_coded.csv')
 ```
 
 ### 2. **Handling Missing Values**
@@ -54,8 +54,8 @@ from sklearn.preprocessing import StandardScaler
 
 # Standardize the numeric columns using z-score
 scaler = StandardScaler()
-numeric_columns = df.select_dtypes(include='number').columns
-df[numeric_columns] = scaler.fit_transform(df[numeric_columns])
+numerical_columns = df.select_dtypes(include='number').columns
+df[numerical_columns] = scaler.fit_transform(df[numerical_columns])
 ```
 
 ### 5. **Saving the Preprocessed Data**
