@@ -42,7 +42,7 @@ Categorical variables are encoded using appropriate methods:
 
 Standardization is applied to numeric columns using z-score normalization:
 
-\[ z = \frac{x - \mu}{\sigma} \]
+z = (x - μ) / σ
 
 Where:
 - \( x \) is the original value,
