@@ -63,7 +63,7 @@ df[numerical_columns] = scaler.fit_transform(df[numerical_columns])
 The preprocessed dataset can be saved for further use:
 
 ```python
-df.to_csv('preprocessed_dataset.csv', index=False)
+df.to_csv('Normalized_food_score.csv', index=False)
 ```
 
 ### 6. **Final Output and Evaluation**
@@ -90,13 +90,7 @@ pip install pandas scikit-learn imbalanced-learn
 
 1. Clone or download the repository.
 2. Install the required libraries using `pip`.
-3. Run the preprocessing script:
-
-```bash
-python preprocess.py
-```
-
-Replace `preprocess.py` with your script name if different.
+3. Run the preprocessing script
 
 ## Conclusion
 
